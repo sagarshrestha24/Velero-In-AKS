@@ -91,7 +91,7 @@ kubectl get all -n velero
 ```
 ### NOTE : If want to schedule a backup every 24 hrs then use below command.
 ```
-./ velero create schedule nginx-test  --schedule ="@every 24h"
+./velero create schedule nginx-test  --schedule ="@every 24h"
 ```
 
 Thanks & Regards
