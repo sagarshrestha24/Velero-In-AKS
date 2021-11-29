@@ -51,7 +51,7 @@ AZURE_AKS_RESOURCE_GROUP=$(az aks show --query nodeResourceGroup --name $AKS_Clu
 AZURE_CLIENT_ID=$(az ad sp show --id http://$Velero_Storage_Account --query appId --output tsv)
 
 ```
-### NOTE : In Azure change this Above AZURE_CLIENT_ID with this : Azure AD > APP Registrations > All Applications > Storage Account > Copy that Application Client ID and Paste it in above AZURE_CLIENT_ID
+##### NOTE : In Azure change this Above AZURE_CLIENT_ID with this : Azure AD > APP Registrations > All Applications > Storage Account > Copy that Application Client ID and Paste it in above AZURE_CLIENT_ID
 ```
 cat << EOF > ./credentials-velero
 AZURE_SUBSCRIPTION_ID=$AZURE_SUBSCRIPTION_ID
@@ -78,14 +78,14 @@ kubectl get all -n velero
 ```
 #### Now velero is Installed and running So now deploy some your deployments & Pods
 
-## Backup
+### Backup
 ```
 ./velero backup create newbackup
 ./velero get backup
 ./velero backup describe newbackup
 ./velero backup logs newbackup
 ```
-## Restore 
+### Restore 
 ```
 ./velero restore create --from-backup newbackup
 ```
@@ -95,4 +95,5 @@ kubectl get all -n velero
 ```
 
 Thanks & Regards
+
 Aditya Mandil
