@@ -93,7 +93,11 @@ kubectl get all -n velero
 ```
 ./velero create schedule nginx-test  --schedule ="@every 24h"
 ```
-
+##### References : 
+- https://velero.io/docs/v1.7/basic-install/
+- https://stackoverflow.com/questions/68899098/access-azure-active-directory-sso-from-an-app-outside-the-tenant
+- https://github.com/Nagendran2807/Velero-k8s/tree/main/Azure-AKS
+- https://www.youtube.com/watch?v=WMrBs2JN57k&t=1669s
 Thanks & Regards
 
 Aditya Mandil
