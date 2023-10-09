@@ -99,6 +99,4 @@ kubectl get all -n velero
 - https://github.com/Nagendran2807/Velero-k8s/tree/main/Azure-AKS
 - https://www.youtube.com/watch?v=WMrBs2JN57k&t=1669s
 
-Thanks & Regards
 
-Aditya Mandil
